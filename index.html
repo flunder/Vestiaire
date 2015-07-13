@@ -18,66 +18,401 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalise.css" media="screen" />
+    <link rel="stylesheet" href="css/grid12.css" media="screen" />
     <link rel="stylesheet" href="css/style.css" media="screen" />
     <link rel="stylesheet" href="css/shame.css" media="screen" />
 
     <!-- Javascript-->
     <script type="text/javascript" src="scripts/vendor/modernizr-2.8.3-custom.js"></script>
+    <script type="text/javascript" src="scripts/vendor/responsive-img.min.js"></script>
 
 </head>
 
 <body>
 
-    <header>
-        <h1>VOGUE</h1>
+    <header class="visible-md visible-lg">
+        <div class="container">
+            <h1>VOGUE</h1>
+        </div>
     </header>
 
     <main>
 
-        <section>
+        <section class="section-intro container container-intro borderless paddingless">
+
+            <div class="container-intro-win bg-primary">
+
+                <p class="container-intro-win-p">
+                    Win a £1,000 gift card <span class="font-brandon">to spend on a designer wardrobe at Vestiaire Collective</span>
+                </p>
+
+                <a class="container-intro-win-enter normalize-style btn" href="#">
+                    Enter to win <i class="arrow-button-thin"></i>
+                </a>
+
+            </div>
+
+            <div class="container-intro-vestaire v-center">
+                <div class="v-centre-inner">
+                    <i class="logo-vestiaire"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <!--
+            SECTION: Features
+        -->
+
+        <section class="section-features container features-container">
 
             <h2>Inside the wardrobes of...</h2>
 
-            <p>
+            <p class="para-main">
                 A woman’s wardrobe is a sacred place. Here, gain exclusive access to the sartorial sanctums of
                 three women who regularly make the best-dressed lists from New York to London.
                 Watch the videos below.
             </p>
 
-            <h3>Delve into <span>Lily Allen’s</span> treasure trove</h3>
+            <div class="features">
 
-            <nav>
-                <ol class="feature-list">
-                    <li class="feature-list-item feature-list-item--selected">Lily Allen</li>
-                    <li class="feature-list-item">Olivia Palermo</li>
-                    <li class="feature-list-item">Suki Waterhouse</li>
-                </ol>
-            </nav>
+                <!--
+                    Lily Allen
+                -->
+
+                <article class="features-article features-article-selected ">
+
+                    <header class="features-header row">
+
+                        <figure class="features-figure sixty-height">
+
+                            <img class="features-figure-img features-figure-img--center" alt="Lily Allen" src="images/holder.jpg" data-src-base="images/" data-src="<992:feature-lili-mob.jpg,
+                                                                                                                                                                    >992:feature-lili.jpg" />
+                            <figcaption class="features-caption">
+                                <h3>Lily Allen</h3>
+                                <p>Playing now</p>
+                            </figcaption>
+                        </figure>
+
+                    </header>
+
+                    <div class="image-video-holder visible-md visible-lg row">
+                        <img src="images/video-placeholder.jpg" alt="placeholder" />
+                    </div>
+
+                    <h3 class="h2 normalize-case tracking_extend features-article-intro-headline">Delve into <span>Lily Allen</span>’s treasure trove</h3>
+
+                    <p class="para-main">
+                        With gifts from Karl Lagerfeld to pieces discovered in hidden vintage stores,
+                        Lily Allen’s wardrobe is exactly the eclectic box of delights that you might imagine. Step inside with Bay Garnett.
+                    </p>
+
+                    <a href="#" class="btn btn-tight">
+                        Discover more exclusive footage here <i class="arrow-button-bold"></i>
+                    </a>
+
+                    <h4 class="features-shop-headline with-sub-line">Shop the edit</h4>
+
+                    <p class="para-sub font-helvetica normalize-style features-article-para-sub">
+                        When self-confessed fashion magpies <strong>Lily Allen and Bay Garnett</strong> get together, talk always turns to fashion, and
+                        their ever-evolving personal styles. Using Vestiaire Collective as a global search tool for elusive fashion gems, it’s
+                        easy to find a wardrobe addition that will be the “great conversation starter” that Lily is always looking for.
+                    </p>
+
+                    <ul class="slider slider-horizontal">
+
+                        <li>
+                            <figure>
+                                <img src="images/item-412.jpg" alt="Isabel Marant" />
+                                <figcaption>
+                                    <h5>Isabel Marant</h5>
+                                    <p class="para-sub">Signature Parisian cool in fluffy knit form – just throw on and go</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="images/item-337.jpg" alt="Proenza Schoule" />
+                                <figcaption>
+                                    <h5>Proenza Schouler</h5>
+                                    <p class="para-sub">Go for gold in this shimmering top by the NY duo, perfect for day or night</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="images/item-441.jpg" alt="Alexander Wang" />
+                                <figcaption>
+                                    <h5>Alexander Wang</h5>
+                                    <p class="para-sub">Functionality and luxury go hand in hand in this ultra-wearable sweatshirt</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="images/item-645.jpg" alt="Chanel" />
+                                <figcaption>
+                                    <h5>Chanel</h5>
+                                    <p>What could be more desirable than a 2.55 in timelessly chic red leather?</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
+
+                    <a href="#" class="btn btn-tight">
+                        Shop more at vestiaire collective <i class="arrow-button-bold"></i>
+                    </a>
+
+                </article>
+
+                <!--
+                    Olivia Palermo
+                -->
+
+                <article class="features-article">
+
+                    <header class="features-header row">
+                        <figure class="features-figure">
+                            <img src="images/feature-olivia-soon.jpg" alt="Olivia Palermo" />
+                            <figcaption>
+                                <h3 class="h5">Olivia Palermo</h3>
+                                <p>COMING 02.07.15</p>
+                            </figcaption>
+                        </figure>
+                    </header>
+
+                </article>
+
+                <!--
+                    Suki Waterhouse
+                -->
+
+                <article class="features-article">
+
+                    <header class="features-header row">
+                        <figure class="features-figure">
+                            <img src="images/feature-suki-soon.jpg" alt="Suki Waterhouse" />
+                            <figcaption>
+                                <h3 class="h5">Suki Waterhouse</h3>
+                                <p>COMING 09.07.15</p>
+                            </figcaption>
+                        </figure>
+                    </header>
+
+                </article>
+
+            </div>
 
         </section>
 
-        <section>
+        <!--
+            SECTION: Vestiaire Collective Explained
+        -->
+
+        <section class="section-collective-explained container">
 
             <h2>Vestiaire Collective <span>explained</span></h2>
 
+            <p class="section-collective-explained-p para-main">
+                Who said you can have it all? Vestiaire Collective does. The premium fashion website has changed the way
+                women shop all over the world. To buy better but own less is the ultimate way to ensure your outfits are at the
+                top of their game. Buy, sell, share – it really is as easy as one, two, three.
+            </p>
+
+            <div class="section-collective-explained-wrap">
+
+                <figure class="section-collective-explained-figure col-md-4 mobile-no-pad mobile-row">
+                    <img src="images/buy.jpg" alt="buy" class="section-collective-explained-img" />
+                    <figcaption class="section-collective-explained-cap">
+                        <div class="visible-md visible-lg section-collective-explained-diag"><i class="diagonal"></i></div>
+                        <h3 class="h5">Buy</h3>
+                        <p class="para-sub font-helvetica normalize-style">
+                            With up to 70% off a carefully curated edit of
+                            luxury brands and a quality control process
+                            to ensure authenticity of all items, why
+                            wouldn’t you?
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure class="section-collective-explained-figure col-md-4 mobile-no-pad mobile-row">
+                    <img src="images/sell.jpg" alt="sell" class="section-collective-explained-img" />
+                    <figcaption class="section-collective-explained-cap">
+                        <div class="visible-md visible-lg section-collective-explained-diag"><i class="diagonal"></i></div>
+                        <h3 class="h5">Sell</h3>
+                        <p class="para-sub font-helvetica normalize-style">
+                            With a fast and simple uploading process,
+                            protected by a secure selling system,
+                            you can make room in your wardrobe for
+                            new-season treats by selling your preworn
+                            treasures at a highly competitive
+                            commission rate.
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure class="section-collective-explained-figure col-md-4 mobile-no-pad mobile-row">
+                    <img src="images/share.jpg" alt="" class="section-collective-explained-img" />
+                    <figcaption class="section-collective-explained-cap">
+                        <div class="visible-md visible-lg section-collective-explained-diag"><i class="diagonal"></i></div>
+                        <h3 class="h5">Share</h3>
+                        <p class="para-sub font-helvetica normalize-style">
+                            With a global community of more than 3
+                            million fashion lovers, it’s easy to share your
+                            fashion finds and get inspiration from other
+                            online members
+                        </p>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <a href="#" class="btn">
+                Join the community <i class="arrow-button-bold"></i>
+            </a>
+
         </section>
 
-        <section>
+        <!--
+            SECTION: Style
+        -->
 
-            <h2>Style <span>ON THE GO</span></h2>
+        <section class="section-style container">
+
+            <h2>Style <span>on the go</span></h2>
+
+            <p class="para-main">
+                Download the Vestiaire Collective mobile App
+                to shop luxury fashion whenever you want,
+                wherever you are.
+            </p>
+
+            <figure class="section-style-cover">
+                <img alt="" src="images/holder.jpg" data-src-base="images/" data-src="<992:iphone5-mob.jpg,
+                                                                                      >992:iphone5.jpg" />
+            </figure>
+
+            <div>
+
+                <i class="logo-vestiaire-sqr visible-md visible-lg"></i>
+
+                <div class="col-xs-6">
+                    <a href="#" class="btn btn--app-store text-indent">Available on the App Store</a>
+                </div>
+
+                <div class="col-xs-6">
+                    <a href="#" class="btn btn--google-play text-indent">Android App on Google play</a>
+                </div>
+
+            </div>
 
         </section>
 
-        <section>
+        <!--
+            SECTION: Competition
+        -->
+
+        <section class="section-competition container borderless">
 
             <h2>Competition</h2>
-            <h3>WIN YOUR DREAM WARDROBE</h3>
+
+            <h3 class="section-competition-subline">Win your dream Wardrobe</h3>
+
+            <h4 class="section-competition-cta">
+                Enter our exclusive competition to
+                <span class="font-brandon uppercase-case normalize-style">win a £1,000 GIFT CARD to spend at vestiaire collective</span>
+            </h4>
+
+            <p class="para-main">
+                The Chanel bag you’ve dreamed of for years; the Céline dress you couldn’t quite
+                justify; those Saint Laurent boots that sold out before you found them? These
+                could be just a click away if you win this dream prize.
+            </p>
+
+            <form action="#">
+
+                <p class="form-row">
+                    <label for="first_name">
+                        <span class="hidden">First Name</span>
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name" class="font-brandon" />
+                    </label>
+                </p>
+
+                <p class="form-row">
+                    <label for="last_name">
+                        <span class="hidden">Surname</span>
+                        <input type="text" id="last_name" name="last_name" placeholder="Surname" class="font-brandon" />
+                    </label>
+                </p>
+
+                <p class="form-row">
+                    <label for="email">
+                        <span class="hidden">First Name</span>
+                        <input type="text" id="email" name="email" placeholder="Email address" class="font-brandon" />
+                    </label>
+                </p>
+
+                <p class="form-row">
+                    <label for="send_me_offers">
+                        <input type="checkbox" id="send_me_offers" name="send_me_offers" value="true" />
+                        <span><i class="form-checked"></i></span>
+                        <span class="font-helvetica normalize-style checkbox-label disable-hilight">Please tick here if you would like to receive information and special offers from Vestiaire Collective </span>
+                    </label>
+                </p>
+
+                <p class="form-row">
+                    <label for="send_me_emails">
+                        <input type="checkbox" id="send_me_emails" name="send_me_emails" value="true" />
+                        <span><i class="form-checked"></i></span>
+                        <span class="font-helvetica normalize-style checkbox-label disable-hilight">Please tick here to receive emails and special offers from Condé Nast Publications Limited</span>
+                    </label>
+                </p>
+
+                <p class="form-row">
+                    <label for="send_me_further_info">
+                        <input type="checkbox" id="send_me_further_info" name="send_me_further_info" value="true" />
+                        <span><i class="form-checked"></i></span>
+                        <span class="font-helvetica normalize-style checkbox-label disable-hilight">Please tick to receive further information from exclusive partners of Condé Nast Publications Limited</span>
+                    </label>
+                </p>
+
+                <p class="form-row">
+                    <label for="terms_accepted">
+                        <input type="checkbox" id="terms_accepted" name="terms_accepted" value="true" checked="checked" />
+                        <span><i class="form-checked"></i></span>
+                        <span class="font-helvetica normalize-style checkbox-label disable-hilight black">I have read and accept the <a href="#" class="inherit-colour underline">Terms and Conditions</a></span>
+                    </label>
+                </p>
+
+                <p class="form-row submit-row">
+                    <label for="submit">
+                        <input type="submit" class="btn" value="Submit" id="submit" name="submit" />
+                    </label>
+                </p>
+
+            </form>
 
         </section>
 
     </main>
 
     <footer>
+
+        <div>Visit <a href="#" class="footer-link">vestiairecollective.com</a></div>
+        <div class="normalize-style">Follow @Vestiaireco</div>
+
+        <ul class="social-connect paddingless">
+            <li class="social-connect-link"><a href="#"><i class="icon-facebook"></i></a></li>
+            <li class="social-connect-link"><a href="#"><i class="icon-twitter"></i></a></li>
+            <li class="social-connect-link"><a href="#"><i class="icon-instagram"></i></a></li>
+            <li class="social-connect-link"><a href="#"><i class="icon-googleplus"></i></a></li>
+            <li class="social-connect-link social-connect-link-last"><a href="#"><i class="icon-pinterest"></i></a></li>
+        </ul>
+
     </footer>
 
 <!--

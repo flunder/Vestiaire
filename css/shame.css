@@ -1,9 +1,6 @@
 
-
-div {
-     /* TEMP */
-    float: left; 
-    background-color: rgb(191,159,86);
-    text-align: center;
-    padding: 13px;
-}
+/*
+    Mobile add padding to headlines to center them nicer ( according to design )
+*/
+h2 { padding-left: 30px; padding-right: 30px; margin-bottom: 5px; }
+h3 { padding-left: 30px; padding-right: 30px; margin-bottom: 5px; }

@@ -1,21 +1,26 @@
 /* ------------------------------------------------------------------------------------------
 
 NAME - Vestiaire
-AUTH - LARS BORTFELDT
+AUTH - LARS BORTFELDT @ LarsAttacks
 DATE - 09.07.2015
 
 ---------------------------------------------------------------------------------------------
 
 DOC STRUCTURE
 -
-01 - Defaults
-02 - Typography
-	 Typekit class events
-	 Headings
-04 - Grid Structure
-05 - Header
+01 - BASE
+02 - LAYOUT
+
+
+04 -
+05 -
 
 ------------------------------------------------------------------------------------------ */
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------
 
@@ -31,43 +36,243 @@ DOC STRUCTURE
     }
 
 html {
-    font-size: 100%;
+    font-size: 62.5%;
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
 
+/* Defaults ------------------------------------------------------------------------------- */
+
+a, 
+ul,
+ol { position: relative; }
+
+ul, 
+ol { list-style: none; }
+
+a { text-decoration: none; }
+
+p { margin-bottom: 20px; }
+
+/* Helpers -------------------------------------------------------------------------------- */
+
+.v-center { display: table; }
+.v-centre-inner { display: table-cell; vertical-align: middle; }
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------------------------------
 
 02. LAYOUT
 
-    - Sections
+    - Main Sections
     - Typography
-    - User Interface
------------------------------------------------------------------------------------------- */
+    - User Interface: Icons
+    - User Interface: Buttons
+    - User Interface: Form Elements
 
-/* Sections
------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------------- */
 
-header { }
-main { }
-footer { }
+/* Main Sections -------------------------------------------------------------------------- */
 
+header {
+    background: black;
+    overflow: hidden;
+}
 
-/* Typography
------------------------------------------------------------------------------------------- */
+main {
 
-h1 { }
-h2 { }
-h3 { }
-h4 { }
-h5 { }
-h6 { }
+}
 
+section { 
+    border-bottom: 12px solid #000;
+    text-align: center;
+    padding: 13px 13px 45px;
+}
 
-/* User Interface
------------------------------------------------------------------------------------------- */
+footer {
+    color: white;
+    background: #3a3a3a;
+}
+
+/* Typography ---------------------------------------------------------------------------- 
+
+    Font-families:
+
+    1. "Caslon"    - ITC Caslon 224 W01 Book
+                   - 600 normal / italic
+
+    2. "Brandon"   - Brandon Grotesque
+                   - normal
+                   - 600 normal (reg)
+                   - 700 normal
+                   - 800 normal
+
+    3. "MinionPro" - Minion Pro
+                   - 600 normal (reg) / italic
+                   - 700 italic
+                   - 800 italic
+
+*/
+
+/* --------- "Caslon" --------- */
+
+@font-face {
+    font-family: 'Caslon';
+    src: url('../assets/fonts/itc-caslon/itc-caslon.eot');
+    src: url('../assets/fonts/itc-caslon/itc-caslon.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/itc-caslon/itc-caslon.woff') format('woff'),
+         url('../assets/fonts/itc-caslon/itc-caslon.ttf') format('truetype'),
+         url('../assets/fonts/itc-caslon/itc-caslon.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Caslon';
+    src: url('../assets/fonts/itc-caslon/itc-caslon-it.eot');
+    src: url('../assets/fonts/itc-caslon/itc-caslon-it.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/itc-caslon/itc-caslon-it.woff') format('woff'),
+         url('../assets/fonts/itc-caslon/itc-caslon-it.ttf') format('truetype'),
+         url('../assets/fonts/itc-caslon/itc-caslon-it.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* --------- "Brandon" --------- */
+
+@font-face {
+    font-family: 'Brandon';
+    src: url('../assets/fonts/brandon/brandon_reg.eot');
+    src: url('../assets/fonts/brandon/brandon_reg.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/brandon/brandon_reg.woff') format('woff'),
+         url('../assets/fonts/brandon/brandon_reg.ttf') format('truetype'),
+         url('../assets/fonts/brandon/brandon_reg.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url('../assets/fonts/brandon/brandon_med.eot');
+    src: url('../assets/fonts/brandon/brandon_med.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/brandon/brandon_med.woff') format('woff'),
+         url('../assets/fonts/brandon/brandon_med.ttf') format('truetype'),
+         url('../assets/fonts/brandon/brandon_med.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url('../assets/fonts/brandon/brandon_bld.eot');
+    src: url('../assets/fonts/brandon/brandon_bld.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/brandon/brandon_bld.woff') format('woff'),
+         url('../assets/fonts/brandon/brandon_bld.ttf') format('truetype'),
+         url('../assets/fonts/brandon/brandon_bld.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* --------- "MinionPro" --------- */
+
+@font-face {
+    font-family: 'MinionPro';
+    src: url('../assets/fonts/minionpro/MinionPro-Regular.eot');
+    src: url('../assets/fonts/minionpro/MinionPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/minionpro/MinionPro-Regular.woff') format('woff'),
+         url('../assets/fonts/minionpro/MinionPro-Regular.ttf') format('truetype'),
+         url('../assets/fonts/minionpro/MinionPro-Regular.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'MinionPro';
+    src: url('../assets/fonts/minionpro/MinionPro-Regular.eot');
+    src: url('../assets/fonts/minionpro/MinionPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/minionpro/MinionPro-Regular.woff') format('woff'),
+         url('../assets/fonts/minionpro/MinionPro-Regular.ttf') format('truetype'),
+         url('../assets/fonts/minionpro/MinionPro-Regular.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'MinionPro';
+    src: url('../assets/fonts/minionpro/MinionPro-It.eot');
+    src: url('../assets/fonts/minionpro/MinionPro-It.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/minionpro/MinionPro-It.woff') format('woff'),
+         url('../assets/fonts/minionpro/MinionPro-It.ttf') format('truetype'),
+         url('../assets/fonts/minionpro/MinionPro-It.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: italic;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'MinionPro';
+    src: url('../assets/fonts/minionpro/MinionPro-MediumIt.eot');
+    src: url('../assets/fonts/minionpro/MinionPro-MediumIt.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/minionpro/MinionPro-MediumIt.woff') format('woff'),
+         url('../assets/fonts/minionpro/MinionPro-MediumIt.ttf') format('truetype'),
+         url('../assets/fonts/minionpro/MinionPro-MediumIt.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'MinionPro';
+    src: url('../assets/fonts/minionpro/MinionPro-BoldIt.eot');
+    src: url('../assets/fonts/minionpro/MinionPro-BoldIt.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/minionpro/MinionPro-BoldIt.woff') format('woff'),
+         url('../assets/fonts/minionpro/MinionPro-BoldIt.ttf') format('truetype'),
+         url('../assets/fonts/minionpro/MinionPro-BoldIt.svg#3793dd7a0c72f941c84c5e828bb7be3c') format('svg');
+    font-style: italic;
+    font-weight: 800;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.5rem; /* Base font 15pt */
+    line-height: 2.5rem;
+    font-family: 'MinionPro';
+    font-style: italic;
+}
+
+.font-caslon    { font-family: "Caslon"; }
+.font-brandon   { font-family: "Brandon"; }
+.font-minion    { font-family: "MinionPro"; }
+.font-helvetica { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+h1, .h1 { color: white; }
+h2, .h2 { font-family: "Caslon";    font-style: italic; font-size: 2.4rem; line-height: 3.4rem; }
+h3, .h3 { font-family: "Brandon";   font-style: normal; font-size: 2.3rem; line-height: 1.7rem; font-weight: 800; text-transform: uppercase; }
+h4, .h4 { font-family: "MinionPro"; font-style: italic; font-size: 2rem;   line-height: 3.2rem; }
+h5, .h5 { font-family: "Brandon";   font-style: normal; font-size: 1.8rem; line-height: 3.0rem; font-weight: 800; text-transform: uppercase; }
+h6, .h6 { }
+
+.btn { font-family: "Brandon"; font-style: normal; font-size: 1.28rem; line-height: 2.2rem; font-weight: 800; }
+
+.tracking_normal { letter-spacing: 0em; }
+.tracking_tiny   { letter-spacing: 0.05em; }
+.tracking_extend { letter-spacing: 0.08em; }
+
+.normalize-case  { text-transform: initial; } 
+.uppercase-case  { text-transform: uppercase; }
+.normalize-style { font-style: normal; }
+
+h1 span,
+h2 span,
+h3 span,
+h4 span { font-family: "Brandon"; font-style: normal; font-weight: 800; text-transform: uppercase; }
+
+/* User Interface: Icons ----------------------------------------------------------------- */
 
 i {
     background-color: transparent;
@@ -97,6 +302,97 @@ i.icon-instagram      { width: 23px;  height: 23px;  background-position: -72px 
 i.icon-googleplus     { width: 23px;  height: 23px;  background-position: -104px -129px; }
 i.icon-pinterest      { width: 23px;  height: 23px;  background-position: -137px -129px; }
 
+/* User Interface: Buttons --------------------------------------------------------------- */
+
+.btn { text-transform: uppercase; padding: 13px; display: block; background: #bf9f56; color: white; }
+
+.btn--app-store { background: url('../images/btn-app-store.png') no-repeat center center; float: right; }
+.btn--google-play { background: url('../images/btn-google-play.png') no-repeat center center; float: left; }
+
+.btn--app-store,
+.btn--google-play { overflow: hidden; background-size: 100%; width: 110px; }
+
+.btn-tight { font-size: 1.1rem; padding: 13px 0px; }
+.btn-tight i { left: 7px; }
+
+.arrow-button-bold { position: relative; left: 25px; top: 2px; }
+
+/* User Interface: Colours ---------------------------------------------------------------
+
+    Colour Reference:
+
+    base:      #bf9f56             # brown
+    form-bg:   #d1d1d1             # light-grey
+    font-base: black;              # 100% black
+    font-sub:  rgba(0, 0, 0, 0.6); # 60% black -> #6f6f6f
+    footer:    rgba(0, 0, 0, 0.8); # 80% black -> #3a3a3a
+
+*/
+
+.bg-primary { background: #bf9f56; } /* base-brown */
+
+.black { color: black; }
+
+/* User Interface: Addons --------------------------------------------------------------- */
+
+strong { color: #000; }
+
+figure { display: block; padding: 0; margin: 0; }
+figure img { width: 100%; }
+
+.hidden { display: none; }
+
+.with-sub-line { }
+.with-sub-line:after { border-bottom: 2px solid #8E8A8A; content: ""; height: 1px; display: block; width: 70%; text-align: center; margin: 0 auto; }
+
+.para-main { }
+.para-sub { color: #6f6f6f; }
+
+.borderless  { border: none; }
+.paddingless { padding: 0px; }
+
+.disable-hilight::selection      { background: transparent; }
+.disable-hilight::-moz-selection { background: transparent; }
+
+.third-height  { height: 0; overflow: hidden; padding-bottom: 33%; }
+.half-height   { height: 0; overflow: hidden; padding-bottom: 50%; }
+.sixty-height  { height: 0; overflow: hidden; padding-bottom: 60%; }
+.full-height   { height: 0; overflow: hidden; padding-bottom: 100%; }
+
+.text-indent { text-indent: -777777px; }
+
+.inherit-colour { color: inherit; }
+
+.underline { text-decoration: underline; }
+
+/* Form elements --------------------------------------------------------------- */
+
+.form-row { margin-bottom: 10px; clear: both; }
+.submit-row { margin-top: 50px; }
+
+input { background: #d1d1d1; padding: 16px 10px; font-size: 12px; line-height: 2rem; width: 100%; font-weight: normal; font-style: normal; margin: 0px; border: 0px; color: white; margin-top: 6px; }
+label { cursor: pointer; position: relative; color: #6f6f6f; font-size: 1.3rem; line-height: 2.3rem; }
+
+input[type=checkbox] { float: left; width: 30px; height: 30px; display: block; overflow: hidden; background-color: #D1D1D1; -webkit-appearance: none; -moz-appearance: none; }
+input[type=checkbox] + span { display: none; }
+input[type=checkbox]:checked { background: white; }
+input[type=checkbox]:checked + span { display: block; position: absolute; left: 5px; width: 20px; height: 20px; top: 12px; }
+
+.checkbox-label { display: block; text-align: left; margin-left: 40px; }
+
+::-webkit-input-placeholder { color: white; font-size: 1rem; font-weight: 800; text-transform: uppercase; }
+     :-ms-input-placeholder { color: white; }
+          :-moz-placeholder { color: white; }
+         ::-moz-placeholder { color: white; }
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------
 
@@ -105,15 +401,69 @@ i.icon-pinterest      { width: 23px;  height: 23px;  background-position: -137px
   [1] - Feature List
 ------------------------------------------------------------------------------------------ */
 
-.feature-list { }
-.feature-list-item { }
-.feature-list-item--selected { }
+/* Gift-card teaser */
+.container-intro-win { padding: 12px; }
+.container-intro-win-p { color: white; font-size: 1.7rem; line-height: 1.9rem; margin: 0px; }
+.container-intro-win-p span { font-style: initial; }
+.container-intro-win-enter { background-color: inherit; text-align: center; font-size: 0.9rem; padding: 0px; font-weight: 800; height: 13px; }
+.container-intro-win-enter i { position: relative; top: 1px; left: 6px; }
+.container-intro-vestaire { background: url('../images/intro-mob.jpg') no-repeat 0 0 transparent; width: 100%; height: 170px; background-size: 100%; }
+
+/* Features intro */
+.features-container { padding-bottom: 20px; }
+.features-container h2 { font-size: 3rem; line-height: 3.6rem; }
+
+/* Actual feature */
+.features { position: relative; }
+.features-shop-headline { margin-top: 4px; line-height: 3.6em; }
+.features-figure h3 { font-size: 2.3rem; }
+.features-figure-img--center { margin-top: -16%; }
+.features-caption { display: none; }
+.features-article-selected { margin-bottom: 30px; }
+.features-article-para-sub { color: #6f6f6f; font-size: 1.4rem; line-height: 2.6rem; }
+.features-article-intro-headline { font-size: 3rem; line-height: 4rem; margin-top: 20px; }
+
+/* Temp video placeholder */
+.image-video-holder { border: 0; width: 100%; margin-top: 30px; }
+.image-video-holder img { width: 100%; }
+
+/* Iphone image, store push */
+.section-style-cover { margin: 10px 10px 30px; }
+
+/* */
+.section-collective-explained { }
+.section-collective-explained .para-main { font-size: 1.9rem; line-height: 2.62rem; margin: 30px auto 50px auto; }
+.section-collective-explained-figure { margin-top: 15px; margin-bottom: 15px; position: relative; }
+.section-collective-explained p { font-size: 1.4rem; line-height: 2.6rem; padding: 0 20px; }
+.section-collective-explained h3 { font-size: 2.4rem; line-height: 4.5rem; margin: 0px; }
+
+.section-style { position: relative; }
+.section-style .para-main { font-size: 1.9rem; line-height: 2.62rem; margin: 25px auto; padding: 0px 20px; }
+
+.section-competition { padding-bottom: 5px; }
+.section-competition-subline { font-size: 2.4rem; line-height: 3.3rem; margin-top: 5px;  }
+.section-competition-cta { margin-bottom: 10px; }
+.section-competition-cta span { display: block; }
+.section-competition p { font-size: 1.9rem; line-height: 2.9rem; }
+
+
+.social-connect { overflow: hidden; margin: 15px auto; display: inline-block; }
+.social-connect-link { float: left; margin-right: 10px; }
+.social-connect-link-last { margin-right: 0px; }
+
+footer { text-align: center; padding-top: 15px; }
+.footer-link { color: white; }
+
 
 
 /* ------------------------------------------------------------------------------------------
 
 04. State
 ------------------------------------------------------------------------------------------ */
+
+
+
+
 
 
 
@@ -126,4 +476,37 @@ i.icon-pinterest      { width: 23px;  height: 23px;  background-position: -137px
 
 
 
+article header { background-color: transparent; }
+
+
+@media only screen and (max-width : 992px) {
+
+    .mobile-no-pad { padding-left: 0; padding-right: 0; }
+    .mobile-row { margin-left: -15px; margin-right: -15px; }
+
+}
+
+@media only screen and (min-width : 992px) {
+
+    .btn { display: inline; padding: 13px 26px; }
+
+    .features-container { }
+    .features-article header { width: 35%; }
+    .features-article:nth-of-type(2) header { position: absolute; top: 0px; left: 35%; }
+    .features-article:nth-of-type(3) header { position: absolute; top: 0px; right: -1%; }
+    .features-header { padding: 20px;  }
+    .features-caption { display: block; }
+    .features-caption h3 { line-height: 3rem; padding-left: 0px; padding-right: 0px; }
+    .features-article-selected header { border: 1px solid #C1BFBF; }
+    .features-article-selected .features-article-intro-headline { padding-top: 30px; }
+
+    .sixty-height { height: auto; padding-bottom: 0px; }
+    .features-figure-img--center { margin: 0px; }
+
+    .section-collective-explained-wrap { display: block; overflow: hidden; height: 754px; }
+    .section-collective-explained-img { border-radius: 50%; border-radius: 50%; padding-top: 0px; top: 160px; z-index: 100; position: relative; width: 310px; height: 310px; }
+    .section-collective-explained-cap { position: absolute; top: 0px; }
+    .section-collective-explained-diag { position: absolute; }
+    .section-collective-explained h3 { font-size: 4.5rem; line-height: 6.5rem; padding-top: 30px; margin-bottom: 413px; text-align: left; padding-left: 60px; }
+}
 
