@@ -20,11 +20,10 @@
     <link rel="stylesheet" href="css/normalise.css" media="screen" />
     <link rel="stylesheet" href="css/grid12.css" media="screen" />
     <link rel="stylesheet" href="css/style.css" media="screen" />
-    <link rel="stylesheet" href="css/shame.css" media="screen" />
+    <link rel="stylesheet" href="scripts/vendor/owl/owl.carousel.css" media="screen" />
 
     <!-- Javascript-->
     <script type="text/javascript" src="scripts/vendor/modernizr-2.8.3-custom.js"></script>
-    <script type="text/javascript" src="scripts/vendor/responsive-img.min.js"></script>
 
 </head>
 
@@ -32,7 +31,9 @@
 
     <header class="visible-md visible-lg">
         <div class="container">
-            <h1>VOGUE</h1>
+            <h1 class="transparent row">
+                VOGUE <i class="vogue"></i>
+            </h1>
         </div>
     </header>
 
@@ -54,7 +55,8 @@
 
             <div class="container-intro-vestaire v-center">
                 <div class="v-centre-inner">
-                    <i class="logo-vestiaire"></i>
+                    <i class="logo-vestiaire     container-intro-vestaire-logo visible-xs visible-sm"></i>
+                    <i class="logo-vestiaire-lrg container-intro-vestaire-logo visible-md visible-lg"></i>
                 </div>
             </div>
 
@@ -96,7 +98,7 @@
 
                     </header>
 
-                    <div class="image-video-holder visible-md visible-lg row">
+                    <div class="image-video-holder visible-md visible-lg">
                         <img src="images/video-placeholder.jpg" alt="placeholder" />
                     </div>
 
@@ -107,7 +109,7 @@
                         Lily Allen’s wardrobe is exactly the eclectic box of delights that you might imagine. Step inside with Bay Garnett.
                     </p>
 
-                    <a href="#" class="btn btn-tight">
+                    <a href="#" class="btn btn-tight features-article-discover">
                         Discover more exclusive footage here <i class="arrow-button-bold"></i>
                     </a>
 
@@ -119,49 +121,100 @@
                         easy to find a wardrobe addition that will be the “great conversation starter” that Lily is always looking for.
                     </p>
 
-                    <ul class="slider slider-horizontal">
+                    <div class="slider-wrap features-slider">
 
-                        <li>
-                            <figure>
-                                <img src="images/item-412.jpg" alt="Isabel Marant" />
-                                <figcaption>
-                                    <h5>Isabel Marant</h5>
-                                    <p class="para-sub">Signature Parisian cool in fluffy knit form – just throw on and go</p>
-                                </figcaption>
-                            </figure>
-                        </li>
+                        <ul class="slider slider-horizontal">
 
-                        <li>
-                            <figure>
-                                <img src="images/item-337.jpg" alt="Proenza Schoule" />
-                                <figcaption>
-                                    <h5>Proenza Schouler</h5>
-                                    <p class="para-sub">Go for gold in this shimmering top by the NY duo, perfect for day or night</p>
-                                </figcaption>
-                            </figure>
-                        </li>
+                            <li>
+                                <figure>
+                                    <img src="images/item-412.jpg" alt="Isabel Marant" />
+                                    <figcaption>
+                                        <h5>Isabel Marant</h5>
+                                        <p class="para-sub">Signature Parisian cool in fluffy knit form – just throw on and go</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
 
-                        <li>
-                            <figure>
-                                <img src="images/item-441.jpg" alt="Alexander Wang" />
-                                <figcaption>
-                                    <h5>Alexander Wang</h5>
-                                    <p class="para-sub">Functionality and luxury go hand in hand in this ultra-wearable sweatshirt</p>
-                                </figcaption>
-                            </figure>
-                        </li>
+                            <li>
+                                <figure>
+                                    <img src="images/item-337.jpg" alt="Proenza Schoule" />
+                                    <figcaption>
+                                        <h5>Proenza Schouler</h5>
+                                        <p class="para-sub">Go for gold in this shimmering top by the NY duo, perfect for day or night</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
 
-                        <li>
-                            <figure>
-                                <img src="images/item-645.jpg" alt="Chanel" />
-                                <figcaption>
-                                    <h5>Chanel</h5>
-                                    <p>What could be more desirable than a 2.55 in timelessly chic red leather?</p>
-                                </figcaption>
-                            </figure>
-                        </li>
+                            <li>
+                                <figure>
+                                    <img src="images/item-441.jpg" alt="Alexander Wang" />
+                                    <figcaption>
+                                        <h5>Alexander Wang</h5>
+                                        <p class="para-sub">Functionality and luxury go hand in hand in this ultra-wearable sweatshirt</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
 
-                    </ul>
+                            <!-- Just repeating -->
+
+                            <li>
+                                <figure>
+                                    <img src="images/item-645.jpg" alt="Chanel" />
+                                    <figcaption>
+                                        <h5>Chanel</h5>
+                                        <p>What could be more desirable than a 2.55 in timelessly chic red leather?</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="images/item-412.jpg" alt="Isabel Marant" />
+                                    <figcaption>
+                                        <h5>Isabel Marant</h5>
+                                        <p class="para-sub">Signature Parisian cool in fluffy knit form – just throw on and go</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="images/item-337.jpg" alt="Proenza Schoule" />
+                                    <figcaption>
+                                        <h5>Proenza Schouler</h5>
+                                        <p class="para-sub">Go for gold in this shimmering top by the NY duo, perfect for day or night</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="images/item-441.jpg" alt="Alexander Wang" />
+                                    <figcaption>
+                                        <h5>Alexander Wang</h5>
+                                        <p class="para-sub">Functionality and luxury go hand in hand in this ultra-wearable sweatshirt</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="images/item-645.jpg" alt="Chanel" />
+                                    <figcaption>
+                                        <h5>Chanel</h5>
+                                        <p>What could be more desirable than a 2.55 in timelessly chic red leather?</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                        </ul>
+
+                        <div class="slider-navigation hidden-xs visbile-md visbile-lg">
+                            <a class="btn slider-navigation-btn slider-navigation-btn-prev btn-gallery btn-gallery-prev disable-selection"><i class="arrow-gallery-left"></i></a>
+                            <a class="btn slider-navigation-btn slider-navigation-btn-next btn-gallery btn-gallery-next disable-selection"><i class="arrow-gallery-right"></i></a>
+                        </div>
+
+                    </div>
 
                     <a href="#" class="btn btn-tight">
                         Shop more at vestiaire collective <i class="arrow-button-bold"></i>
@@ -225,51 +278,68 @@
 
             <div class="section-collective-explained-wrap">
 
-                <figure class="section-collective-explained-figure col-md-4 mobile-no-pad mobile-row">
-                    <img src="images/buy.jpg" alt="buy" class="section-collective-explained-img" />
-                    <figcaption class="section-collective-explained-cap">
-                        <div class="visible-md visible-lg section-collective-explained-diag"><i class="diagonal"></i></div>
-                        <h3 class="h5">Buy</h3>
-                        <p class="para-sub font-helvetica normalize-style">
-                            With up to 70% off a carefully curated edit of
-                            luxury brands and a quality control process
-                            to ensure authenticity of all items, why
-                            wouldn’t you?
-                        </p>
-                    </figcaption>
-                </figure>
+                <div class="section-collective-explained-figure col-md-4 mobile-no-pad mobile-row adjustable-order">
 
-                <figure class="section-collective-explained-figure col-md-4 mobile-no-pad mobile-row">
-                    <img src="images/sell.jpg" alt="sell" class="section-collective-explained-img" />
-                    <figcaption class="section-collective-explained-cap">
-                        <div class="visible-md visible-lg section-collective-explained-diag"><i class="diagonal"></i></div>
-                        <h3 class="h5">Sell</h3>
-                        <p class="para-sub font-helvetica normalize-style">
-                            With a fast and simple uploading process,
-                            protected by a secure selling system,
-                            you can make room in your wardrobe for
-                            new-season treats by selling your preworn
-                            treasures at a highly competitive
-                            commission rate.
-                        </p>
-                    </figcaption>
-                </figure>
+                    <img alt="buy" src="images/holder.jpg" class="section-collective-explained-img img-responsive" data-src-base="images/" data-src="<992:buy-mob.jpg,
+                                                                                                                                                     >992:buy.jpg" />
 
-                <figure class="section-collective-explained-figure col-md-4 mobile-no-pad mobile-row">
-                    <img src="images/share.jpg" alt="" class="section-collective-explained-img" />
-                    <figcaption class="section-collective-explained-cap">
-                        <div class="visible-md visible-lg section-collective-explained-diag"><i class="diagonal"></i></div>
-                        <h3 class="h5">Share</h3>
-                        <p class="para-sub font-helvetica normalize-style">
-                            With a global community of more than 3
-                            million fashion lovers, it’s easy to share your
-                            fashion finds and get inspiration from other
-                            online members
-                        </p>
-                    </figcaption>
-                </figure>
+                    <h3 class="h5 adjustable-order-header">
+                        <i class="diagonal visible-md visible-lg"></i>
+                        <span>Buy</span>
+                    </h3>
+
+                    <p class="section-collective-explained-para-sub para-sub font-helvetica normalize-style">
+                        With up to 70% off a carefully curated edit of
+                        luxury brands and a quality control process
+                        to ensure authenticity of all items, why
+                        wouldn’t you?
+                    </p>
+
+                </div>
+
+                <div class="section-collective-explained-figure col-md-4 mobile-no-pad mobile-row adjustable-order">
+
+                    <img alt="buy" src="images/holder.jpg" class="section-collective-explained-img img-responsive" data-src-base="images/" data-src="<992:sell-mob.jpg,
+                                                                                                                                                     >992:sell.jpg" />
+
+                    <h3 class="h5 adjustable-order-header">
+                        <i class="diagonal visible-md visible-lg"></i>
+                        <span>Sell</span>
+                    </h3>
+
+                    <p class="section-collective-explained-para-sub para-sub font-helvetica normalize-style">
+                        With a fast and simple uploading process,
+                        protected by a secure selling system,
+                        you can make room in your wardrobe for
+                        new-season treats by selling your preworn
+                        treasures at a highly competitive
+                        commission rate.
+                    </p>
+
+                </div>
+
+                <div class="section-collective-explained-figure col-md-4 mobile-no-pad mobile-row adjustable-order">
+
+                    <img alt="buy" src="images/holder.jpg" class="section-collective-explained-img img-responsive" data-src-base="images/" data-src="<992:share-mob.jpg,
+                                                                                                                                                     >992:share.jpg" />
+
+                    <h3 class="h5 adjustable-order-header">
+                        <i class="diagonal visible-md visible-lg"></i>
+                        <span>Share</span>
+                    </h3>
+
+                    <p class="section-collective-explained-para-sub para-sub font-helvetica normalize-style">
+                        With a global community of more than 3
+                        million fashion lovers, it’s easy to share your
+                        fashion finds and get inspiration from other
+                        online members
+                    </p>
+
+                </div>
 
             </div>
+
+            <div class="cfix"></div>
 
             <a href="#" class="btn">
                 Join the community <i class="arrow-button-bold"></i>
@@ -283,30 +353,38 @@
 
         <section class="section-style container">
 
-            <h2>Style <span>on the go</span></h2>
+            <div class="section-style-copy col-xs-12 col-md-6 col-md-push-6">
 
-            <p class="para-main">
-                Download the Vestiaire Collective mobile App
-                to shop luxury fashion whenever you want,
-                wherever you are.
-            </p>
+                <h2>Style <span>on the go</span></h2>
 
-            <figure class="section-style-cover">
-                <img alt="" src="images/holder.jpg" data-src-base="images/" data-src="<992:iphone5-mob.jpg,
-                                                                                      >992:iphone5.jpg" />
-            </figure>
-
-            <div>
+                <p class="section-style-p para-main">
+                    Download the Vestiaire Collective mobile App
+                    to shop luxury fashion whenever you want,
+                    wherever you are.
+                </p>
 
                 <i class="logo-vestiaire-sqr visible-md visible-lg"></i>
 
-                <div class="col-xs-6">
-                    <a href="#" class="btn btn--app-store text-indent">Available on the App Store</a>
+                <div class="section-style-getapp">
+
+                    <div class="col-xs-6">
+                        <a href="#" class="btn btn--app-store text-indent pull-right btn-unhover">Available on the App Store</a>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <a href="#" class="btn btn--google-play text-indent pull-left btn-unhover">Android App on Google play</a>
+                    </div>
+
                 </div>
 
-                <div class="col-xs-6">
-                    <a href="#" class="btn btn--google-play text-indent">Android App on Google play</a>
-                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-md-pull-6 paddingless">
+
+                <figure class="section-style-cover section-style-cover-pull">
+                    <img alt="" src="images/holder.jpg" data-src-base="images/" data-src="<992:iphone5-mob.jpg,
+                                                                                          >992:iphone5.jpg" />
+                </figure>
 
             </div>
 
@@ -322,79 +400,83 @@
 
             <h3 class="section-competition-subline">Win your dream Wardrobe</h3>
 
-            <h4 class="section-competition-cta">
-                Enter our exclusive competition to
-                <span class="font-brandon uppercase-case normalize-style">win a £1,000 GIFT CARD to spend at vestiaire collective</span>
-            </h4>
+            <div class="col-md-8 paddingless">
 
-            <p class="para-main">
-                The Chanel bag you’ve dreamed of for years; the Céline dress you couldn’t quite
-                justify; those Saint Laurent boots that sold out before you found them? These
-                could be just a click away if you win this dream prize.
-            </p>
+                <h4 class="section-competition-cta">
+                    Enter our exclusive competition to
+                    <span class="font-brandon uppercase-case normalize-style">win a £1,000 GIFT CARD to spend at vestiaire collective</span>
+                </h4>
 
-            <form action="#">
-
-                <p class="form-row">
-                    <label for="first_name">
-                        <span class="hidden">First Name</span>
-                        <input type="text" id="first_name" name="first_name" placeholder="First Name" class="font-brandon" />
-                    </label>
+                <p class="para-main section-competition-p">
+                    The Chanel bag you’ve dreamed of for years; the Céline dress you couldn’t quite
+                    justify; those Saint Laurent boots that sold out before you found them? These
+                    could be just a click away if you win this dream prize.
                 </p>
 
-                <p class="form-row">
-                    <label for="last_name">
-                        <span class="hidden">Surname</span>
-                        <input type="text" id="last_name" name="last_name" placeholder="Surname" class="font-brandon" />
-                    </label>
-                </p>
+                <form action="#">
 
-                <p class="form-row">
-                    <label for="email">
-                        <span class="hidden">First Name</span>
-                        <input type="text" id="email" name="email" placeholder="Email address" class="font-brandon" />
-                    </label>
-                </p>
+                    <p class="form-row">
+                        <label for="first_name">
+                            <span class="hidden">First Name</span>
+                            <input type="text" id="first_name" name="first_name" placeholder="First Name" class="font-brandon" />
+                        </label>
+                    </p>
 
-                <p class="form-row">
-                    <label for="send_me_offers">
-                        <input type="checkbox" id="send_me_offers" name="send_me_offers" value="true" />
-                        <span><i class="form-checked"></i></span>
-                        <span class="font-helvetica normalize-style checkbox-label disable-hilight">Please tick here if you would like to receive information and special offers from Vestiaire Collective </span>
-                    </label>
-                </p>
+                    <p class="form-row">
+                        <label for="last_name">
+                            <span class="hidden">Surname</span>
+                            <input type="text" id="last_name" name="last_name" placeholder="Surname" class="font-brandon" />
+                        </label>
+                    </p>
 
-                <p class="form-row">
-                    <label for="send_me_emails">
-                        <input type="checkbox" id="send_me_emails" name="send_me_emails" value="true" />
-                        <span><i class="form-checked"></i></span>
-                        <span class="font-helvetica normalize-style checkbox-label disable-hilight">Please tick here to receive emails and special offers from Condé Nast Publications Limited</span>
-                    </label>
-                </p>
+                    <p class="form-row">
+                        <label for="email">
+                            <span class="hidden">First Name</span>
+                            <input type="text" id="email" name="email" placeholder="Email address" class="font-brandon" />
+                        </label>
+                    </p>
 
-                <p class="form-row">
-                    <label for="send_me_further_info">
-                        <input type="checkbox" id="send_me_further_info" name="send_me_further_info" value="true" />
-                        <span><i class="form-checked"></i></span>
-                        <span class="font-helvetica normalize-style checkbox-label disable-hilight">Please tick to receive further information from exclusive partners of Condé Nast Publications Limited</span>
-                    </label>
-                </p>
+                    <p class="form-row">
+                        <label for="send_me_offers">
+                            <input type="checkbox" id="send_me_offers" name="send_me_offers" value="true" />
+                            <span><i class="form-checked"></i></span>
+                            <span class="font-helvetica normalize-style checkbox-label disable-selection">Please tick here if you would like to receive information and special offers from Vestiaire Collective </span>
+                        </label>
+                    </p>
 
-                <p class="form-row">
-                    <label for="terms_accepted">
-                        <input type="checkbox" id="terms_accepted" name="terms_accepted" value="true" checked="checked" />
-                        <span><i class="form-checked"></i></span>
-                        <span class="font-helvetica normalize-style checkbox-label disable-hilight black">I have read and accept the <a href="#" class="inherit-colour underline">Terms and Conditions</a></span>
-                    </label>
-                </p>
+                    <p class="form-row">
+                        <label for="send_me_emails">
+                            <input type="checkbox" id="send_me_emails" name="send_me_emails" value="true" />
+                            <span><i class="form-checked"></i></span>
+                            <span class="font-helvetica normalize-style checkbox-label disable-selection">Please tick here to receive emails and special offers from Condé Nast Publications Limited</span>
+                        </label>
+                    </p>
 
-                <p class="form-row submit-row">
-                    <label for="submit">
-                        <input type="submit" class="btn" value="Submit" id="submit" name="submit" />
-                    </label>
-                </p>
+                    <p class="form-row">
+                        <label for="send_me_further_info">
+                            <input type="checkbox" id="send_me_further_info" name="send_me_further_info" value="true" />
+                            <span><i class="form-checked"></i></span>
+                            <span class="font-helvetica normalize-style checkbox-label disable-selection">Please tick to receive further information from exclusive partners of Condé Nast Publications Limited</span>
+                        </label>
+                    </p>
 
-            </form>
+                    <p class="form-row">
+                        <label for="terms_accepted">
+                            <input type="checkbox" id="terms_accepted" name="terms_accepted" value="true" checked="checked" />
+                            <span><i class="form-checked"></i></span>
+                            <span class="font-helvetica normalize-style checkbox-label disable-selection black">I have read and accept the <a href="#" class="inherit-colour text-underline">Terms and Conditions</a></span>
+                        </label>
+                    </p>
+
+                    <p class="form-row submit-row">
+                        <label for="submit">
+                            <input type="submit" class="btn" value="Submit" id="submit" name="submit" />
+                        </label>
+                    </p>
+
+                </form>
+
+            </div>
 
         </section>
 
@@ -415,29 +497,11 @@
 
     </footer>
 
-<!--
-    <div><i class="arrow-gallery-left"></i></div>
-    <div><i class="arrow-gallery-right"></i></div>
-    <div><i class="arrow-button-bold"></i></div>
-    <div><i class="arrow-button-thin"></i></div>
-
-    <div><i class="form-checked"></i></div>
-    <div><i class="circle-filled"></i></div>
-    <div><i class="circle"></i></div>
-    <div><i class="divider"></i></div>
-    <div><i class="logo-vestiaire"></i></div>
-
-    <div><i class="icon-facebook"></i></div>
-    <div><i class="icon-twitter"></i></div>
-    <div><i class="icon-instagram"></i></div>
-    <div><i class="icon-googleplus"></i></div>
-    <div><i class="icon-pinterest"></i></div>
-
-    <div><i class="diagonal"></i></div>
-    <div><i class="logo-vestiaire-sqr"></i></div>
--->
     <!-- Scripts -->
-    <script src="scripts/vestiaire.js"></script>
+    <script type="text/javascript" src="scripts/vendor/responsive-img.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor/owl/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="scripts/vestiaire.js"></script>
 
 </body>
 </html>
